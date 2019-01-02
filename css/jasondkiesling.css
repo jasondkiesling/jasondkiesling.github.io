@@ -50,6 +50,10 @@ h6 {
   transform: translate(-50%, -50%);
 }
 
+.home-icons {
+  padding-top: 4rem;
+}
+
 .features-icons {
   padding-top: 2rem;
   padding-bottom: 2rem;
