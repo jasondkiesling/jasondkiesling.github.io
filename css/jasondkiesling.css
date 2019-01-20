@@ -24,12 +24,6 @@ h6 {
 .bg-theme{
   background-color:#2d2e7b!important;
 }
-a.bg-theme:focus,
-a.bg-theme:hover,
-button.bg-theme:focus,
-button.bg-theme:hover{
-  background-color:#545b62!important;
-}
 
 .text-theme{
   color:#2d2e7b!important;
@@ -138,12 +132,8 @@ a.text-theme:hover{
     padding-top: 4rem;
 }
 
-.privacy-policy{
-    padding-top: 4rem;
-}
-
-.terms-of-service{
-    padding-top: 4rem;
+.resume{
+  padding-top: 4rem;
 }
 
 .contact{
