@@ -24,12 +24,6 @@ h6 {
 .bg-theme{
   background-color:#2d2e7b!important;
 }
-a.bg-theme:focus,
-a.bg-theme:hover,
-button.bg-theme:focus,
-button.bg-theme:hover{
-  background-color:#545b62!important;
-}
 
 .text-theme{
   color:#2d2e7b!important;
@@ -56,10 +50,6 @@ a.text-theme:hover{
 .header-link {
   color: #000000;
 	text-decoration: none;
-}
-
-.header-logo {
-  height: 20rem;
 }
 
 .outer {
@@ -116,14 +106,6 @@ a.text-theme:hover{
     font-weight: bold;
 }
 
-.project-photo{
-    border-radius: 25px;
-    float: left;
-    margin-right: 10px;
-    max-height: 150px;
-    max-width: 200px;
-}
-
 .project-icons{
     font-size: 30px;
     color: #000000;
@@ -138,23 +120,9 @@ a.text-theme:hover{
     padding-top: 4rem;
 }
 
-.privacy-policy{
-    padding-top: 4rem;
-}
-
-.terms-of-service{
-    padding-top: 4rem;
-}
-
 .contact{
     padding-top: 4rem;
 }
-
-blockquote {
-    border-left: 2px solid #ccc;
-    padding: 0.5em 10px;
-  }
-
 
 footer.footer {
   padding-top: 4rem;
