@@ -6,9 +6,13 @@ body {
   background-color:#f8f9fa!important
 }
 
-header {
+.desktop-header{
   padding-top: 11rem;
-  padding-bottom: 2rem;
+  padding-bottom: 6rem;
+}
+
+.mobile-header{
+  padding-top: 4rem;
 }
 
 h1,
@@ -70,7 +74,7 @@ a.text-theme:hover{
 }
 
 .home-icons {
-  padding-top: 4rem;
+  padding-top: 0rem;
 }
 
 .home-icon-no-underline:hover {
