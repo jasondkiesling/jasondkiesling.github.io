@@ -129,7 +129,11 @@ a.text-theme:hover{
 }
 
 .project-card{
-      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+}
+
+.card{
+      margin-bottom: 1rem;
 }
 
 .project-heading{
