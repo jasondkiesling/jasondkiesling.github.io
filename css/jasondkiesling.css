@@ -60,6 +60,10 @@ a.text-theme:hover{
   height: 20rem;
 }
 
+header {
+  padding-top: 2em;
+}
+
 .outer {
   position: relative;
   height: 100%;
