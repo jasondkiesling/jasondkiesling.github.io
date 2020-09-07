@@ -1,5 +1,9 @@
 
-/* Copyright 2019 - Jason Daniel Kiesling */
+/* Copyright 2020 - Jason Daniel Kiesling */
+
+:root {
+  --theme-main: #2d2e7b;
+}
 
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -26,24 +30,30 @@ h6 {
 }
 
 .bg-theme{
-  background-color:#2d2e7b!important;
+  background-color:var(--theme-main)
 }
 
 .text-theme{
-  color:#2d2e7b!important;
+  color:var(--theme-main)!important;
 }
 a.text-theme:focus,
 a.text-theme:hover{
   color:#494f54!important;
 }
 
-.nav-menu-link {
-    color: #ffffff!important;
+.nav-link.nav-menu-link {
+    color: #ffffff;
 }
 
 .nav-resume-link {
-    color: #2d2e7b!important;
+    color: var(--theme-main);
 }
+
+.nav-link.nav-resume-link#pdf-download {
+  color: #fff;
+  background-color: var(--theme-main);
+}
+
 .anchor{
   display: block;
   height: 6rem;
