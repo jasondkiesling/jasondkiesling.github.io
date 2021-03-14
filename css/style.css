@@ -41,15 +41,10 @@ section h2 {
   height: 15vh;
 }
 
-.vertical-line {
-  height: 100%;
-  width: 2px;
-  border: 2px solid var(--light-blue);
-}
-
 .top-links {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .top-links a {
@@ -69,4 +64,20 @@ footer#footer {
   margin-bottom: 2em;
   text-align: center;
   color: var(--light-blue);
+}
+
+@media (min-width: 992px) {
+  .vertical-line {
+    height: 100%;
+    width: 2px;
+    border-left: 2px solid var(--light-blue);
+  }
+}
+
+@media (max-width: 991px) {
+  .top-links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
