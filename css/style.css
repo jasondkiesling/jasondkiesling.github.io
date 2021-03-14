@@ -1,0 +1,72 @@
+:root {
+  --light-blue: rgb(236, 248, 248);
+  --gray: rgb(53, 53, 53);
+  --red: rgb(220, 73, 58);
+  --steel-blue: rgb(69, 126, 172);
+  --royal-blue: rgb(20, 33, 143);
+  --bright-blue: rgb(0, 167, 225);
+  --white: rgb(255, 255, 255);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Slab", serif;
+  color: var(--steel-blue)
+}
+
+body {
+  background-color: var(--gray);
+  color: var(--light-blue);
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+section {
+  margin-top: 2em;
+  margin-bottom: 0;
+  padding-bottom: 2em;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+section h2 {
+  text-align: center;
+}
+
+.logo-summary img.jk {
+  height: 15vh;
+}
+
+.vertical-line {
+  height: 100%;
+  width: 2px;
+  border: 2px solid var(--light-blue);
+}
+
+.top-links {
+  display: flex;
+  align-items: center;
+}
+
+.top-links a {
+  font-family: "Roboto Slab", serif;
+  color: var(--red);
+  line-height: 2.5em;
+  font-weight: 500;
+  font-size: 1.75em;
+}
+
+.top-links a i {
+  font-size: 2rem;
+}
+
+footer#footer {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: center;
+  color: var(--light-blue);
+}
