@@ -53,6 +53,7 @@ div.lnt {
   padding-left: 20px;
   padding-right: 20px;
   background-color: #536878;
+  max-width: min(600px, 100%);
 }
 
 div.lnt p {
