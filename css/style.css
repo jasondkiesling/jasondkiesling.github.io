@@ -23,15 +23,21 @@ body {
   color: var(--light-blue);
   font-family: "Poppins", sans-serif;
   font-weight: 300;
+  min-height: calc(100vh - 16px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 section {
-  margin-top: 2em;
-  margin-bottom: 0;
-  padding-bottom: 2em;
   margin-left: 5vw;
   margin-right: 5vw;
   max-width: 100%;
+}
+
+section.header {
+  display: flex;
+  justify-content: center;
 }
 
 section h2 {
@@ -40,13 +46,8 @@ section h2 {
 
 section.info {
   display: flex;
-  flex-direction: row;
-}
-
-@media (max-width: 700px) {
-  section.info {
-    flex-direction: column;
-  }
+  flex-direction: column;
+  align-items: center;
 }
 
 div.lnt {
@@ -74,22 +75,41 @@ div.lnt img {
 }
 
 div.about {
-  text-align: justify;
+  /* text-align: justify; */
   margin-left: auto;
   margin-right: auto;
-  max-width: 640px;
+  max-width: 800px;
   padding-right: 20px;
   padding-left: 20px;
 }
 
+.about p {
+  text-align: center;
+}
+
+.header .logo-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.logo-summary p,
+.logo-summary h1 {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .logo-summary img.jk {
-  height: 15vh;
+  margin-top: 32px;
+  height: 6vh;
 }
 
 .top-links {
   display: flex;
   align-items: flex-start;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 24px;
 }
 
 .top-links p {
@@ -98,14 +118,29 @@ div.about {
 
 .top-links a {
   font-family: "Roboto Slab", serif;
-  color: var(--red);
   line-height: 2em;
   font-weight: 500;
-  font-size: 1.75em;
+  text-decoration: none;
+}
+
+.top-links a,
+.top-links a:visited,
+.top-links p {
+  color: var(--red);
+}
+
+.top-links a:hover {
+  color: rgba(255, 0, 0, 0.5);
 }
 
 .top-links a i {
-  font-size: 2rem;
+  font-size: 1rem;
+}
+
+a,
+a:visited {
+  color: #007bff;
+  text-decoration: none;
 }
 
 footer#footer {
