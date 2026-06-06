@@ -18,6 +18,10 @@ h6 {
   color: var(--steel-blue);
 }
 
+h2 {
+  text-align: center;
+}
+
 body {
   background-color: var(--gray);
   color: var(--light-blue);
@@ -46,38 +50,33 @@ section h2 {
 
 section.info {
   display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+section.info div.about p {
+  max-width: min(300px, 30vw);
+  text-align: right;
+}
+
+section.info div.buddy {
+  display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-div.lnt {
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: #536878;
-  max-width: min(600px, 100%);
+
+section.info div.buddy img {
+  height: max(200px, 50vh);
 }
 
-div.lnt p {
-  text-align: center;
-}
-
-div.lnt a {
-  color: lightgreen;
-  text-decoration: underline;
-}
-
-div.lnt img {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+section.info div.buddy p {
+  max-width: min(350px, 40vw);
 }
 
 div.about {
-  /* text-align: justify; */
-  margin-left: auto;
-  margin-right: auto;
   max-width: 800px;
   padding-right: 20px;
   padding-left: 20px;
@@ -148,6 +147,27 @@ footer#footer {
   margin-bottom: 2em;
   text-align: center;
   color: var(--light-blue);
+}
+
+@media (max-width: 650px) {
+  section.info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section.info div.about p {
+    text-align: center;
+    max-width: unset;
+  }
+
+  section.info div.buddy {
+    align-items: center;
+  }
+
+  section.info div.buddy p {
+    max-width: unset;
+  }
+  
 }
 
 @media (min-width: 992px) {
