@@ -107,6 +107,7 @@ div.about {
 .top-links {
   display: flex;
   align-items: flex-start;
+  justify-content: center;
   flex-direction: row;
   gap: 24px;
 }
